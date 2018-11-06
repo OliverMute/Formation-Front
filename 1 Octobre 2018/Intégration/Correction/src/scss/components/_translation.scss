@@ -1,0 +1,40 @@
+.c-translation {
+    line-height:5rem;
+    &__title{
+        margin: 0 2rem 0 16rem;
+        font-size: $text--size-smallest;
+        text-transform:uppercase;
+        float:left;
+    }
+    &__link{
+        margin:1rem 0 0 0;
+        transition: 0.1s ease-in-out;
+        // -- Sprite Drapeau FR
+        &:nth-child(2){
+            display:block;
+            width:28px;
+            height:19px;
+            float:left;
+            text-indent:-9000px;
+            /* pour décaller à 9000 px pour ne plus le voir */
+            background:url(../img/drapeaux.png) no-repeat;
+            background-position:-5px 40px;
+            /* background position pour déplacer drapeau français. Je cache le drapeau anglais. */
+        }
+        // drapeau anglais
+        &:last-child(2){
+            display:block;
+            width:28px;
+            height:19px;
+            float:left;
+            text-indent:-9000px;
+            /* pour décaller à 9000 px pour ne plus le voir */
+            background:url(../img/drapeaux.png) no-repeat;
+            background-position:-107px 40px;
+            /* background position pour déplacer drapeau français. Je cache le drapeau anglais. */
+            &:hover{
+                background-position:-107px 0px;
+            }
+        }
+    }
+}

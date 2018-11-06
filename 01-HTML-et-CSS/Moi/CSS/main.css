@@ -1,0 +1,85 @@
+body{
+    background:url("../images/fond.jpg");
+    background-size:cover;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+main{
+
+    width:960px;
+    display:block;
+
+    margin:40px auto;
+    /* margin:80px auto 80px auto; */
+
+    background-color:white;
+    border-radius:10px;
+    /* border-top-left-radius:10px; */
+
+    /*Overflow avec la valeur hidden, va cacher tous les éléments qui dépassent */
+    overflow:hidden;
+    box-shadow: 0px 0px 15px #b3b3b3;
+/* 
+    background:url("https://cdn.static01.nicematin.com/media/npo/1440w/2018/01/photo-11.jpg") */
+  
+}
+
+
+a {
+    color:black;
+    font-size:20px;
+    text-decoration:none;
+}
+
+li{
+
+    list-style:none;
+    display:inline-block;
+    margin-right:20px;
+   
+    
+}
+
+
+h1{
+
+    color:rgb(218, 221, 231);
+    display:block;
+    margin:0 auto;
+    width:1100px;
+    margin-bottom:40px;
+    text-transform:uppercase;
+    font-size:30px;
+    position:relative;
+    margin:0 auto;
+    width:400px;
+    margin-top:80px;
+}
+
+img{
+    filter:grayscale(1);
+    transition:0.2s ease-in;
+}
+
+img:hover{
+    filter:none;
+}
+
+
+article{
+
+    color:white;
+    width:500px;
+    display:block;
+    margin:0 auto;
+
+}
+
+
+aside{
+
+    margin:0 auto;
+    display:block;
+    width:640px;
+    margin-top:60px;
+}

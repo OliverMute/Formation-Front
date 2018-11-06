@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/* ------------------------------------------------
+    --- Layout | Mise en page de la balise "<main>"
+---------------------------------------------------
+
+    1 - Je souhaite dÃ©finir la largeur de ma page Ã  960px
+    2 - Je souhaite que mon contenu soit centrÃ© au milieu
+    3 - Le fond doit Ãªtre de couleur blanche
+    4 - Je souhaite rajouter une marge top/bottom de 40px
+    5 - Avec la propriÃ©tÃ© border-radius, ajoutez un arrondi de 5px
+    6 - GrÃ¢ce Ã  box-shadow, ajoutez une ombre lÃ©gÃ¨re autour du "main"
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem => 10px */
+    font-size: 62.5%;
+    /* 
+    ou font-size: 100%; 1rem => 16px
+    */
+}
+
+body {
+    
+/* background: url(../img/fond.jpg) no-repeat; */
+    
+/*background-size: cover;*/
+    
+background:url("https://helipadonheels.files.wordpress.com/2011/12/tiramisu.jpg");
+    
+background-repeat:no-repeat;
+    
+background-color:#F2F4F3;
+    
+background-size: cover;
+}
+
+main {
+    width: 960px;
+    /* margin: <top/bottom> <left/right> */
+    margin: 8rem auto;
+    /* margin: <top> <right> <bottom> <left> */
+    /* margin: 80px auto 80px auto; */
+    /* background-color: rgb(60, 20, 11); */
+    /* Pour ajouter un arrondi Ã  mon Ã©lÃ©ment */
+    /* border-radius: 10px; */
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    /* Overflow avec la valeur hidden, va cacher
+    tous les Ã©lÃ©ments qui dÃ©passent de la balise "main" */
+    overflow: hidden;
+    /* box-shadow: 0px 0px 1.5rem #d6d6d6; */
+    padding: .6rem;
+}
+
+
+/* ------------------------------------------------
+    --- Header | Mise en page de la balise "<nav>"
+---------------------------------------------------
+
+    1 - Tous les liens sont en noir
+    2 - Les liens ne sont pas soulignÃ©
+    3 - Ils sont affichÃ©s en ligne grÃ¢ce Ã  la propriÃ©tÃ© "display"
+    4 - Ils sont centrÃ© sur la page
+    5 - Vous pouvez attribuer une couleur au passage de la souris (hover).
+    6 - Pareil pour le ".current"
+    7 - Vous utiliserez une police diffÃ©rente. Par ex. Roboto Condensed
+
+*/
+
+header {
+    width: 100%;
+    height: 400px;
+    background: url("http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/bau2016/garden.jpg");
+    background-size: cover;
+    position: relative;
+    border-top-left-radius: 3rem;
+    /* background-color: rgb(60, 20, 11); */
+    border: .7rem solid rgb(60, 20, 11);
+    box-sizing: border-box;
+    border-bottom-right-radius: 3rem;
+    background-position-y: -10rem;
+}
+
+
+
+header img {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+
+nav {
+    text-align: center;
+    padding:2rem 0;
+    margin-top:1px;
+    /* border-bottom:1px solid rgb(168, 168, 168); */
+    background-color: rgb(60, 20, 11);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 4rem;
+}
+
+nav a {
+    /* Le mot clÃ© de la couleur */
+    color: black;
+    /* Notation HexadÃ©cimale */
+    color: #000000;
+    color: #000;
+    /* Notation DÃ©cimale */
+    color: rgb(255, 255, 255);
+    /* GÃ©rer le soulignement du texte */
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    transition:0.4s ease-in;
+}
+
+nav a:hover {
+    color: rgb(254, 250, 243);
+}
+
+nav .current a {
+    color: rgb(255, 216, 157);
+
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------
+            --- Section | Contenu du Site
+---------------------------------------------------*/
+
+section {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top:10px;
+}
+
+h1{
+
+font-family: 'Roboto Condensed', sans-serif;
+
+text-align: center;
+
+font-weight: normal;
+
+border-bottom: .1rem;
+
+font-size: 5rem;
+
+text-transform:uppercase;
+
+position:absolute;
+
+top: 25px;
+
+color: rgb(255, 255, 255);
+
+left: 70px;
+
+text-shadow: 0 0 20px #753108;
+}
+
+section h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: .1rem ;
+    font-size:4rem;
+    text-transform:uppercase;
+    position:absolute;
+    top:170px;
+    left:360px;
+    color: rgb(77, 178, 224);
+}
+
+section aside {
+    /* -- Dimension & Positionnement -- */
+    width: calc(100% / 2);
+    float: left;
+    /* margin-top:21px; */
+}
+
+section aside img {
+    max-width: 100%;
+}
+
+section article {
+    /* -- Dimension & Positionnement -- */
+    width: calc(100% / 2);
+    float: left;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height:20px;
+    margin-top:30px;
+    
+    
+
+}
+
+
+ section article p {
+     font-family: 'Roboto Condensed';
+
+    color:rgb(46, 46, 46);
+    margin-top:-10px;
+    
+ } 
+
+section article p strong {
+    color: rgb(60, 20, 11);
+    font-size:1.8rem;
+}
+
+.side-images{
+
+display:inline-block;
+
+padding-left: 10px;
+
+padding-top: 10px;
+
+height: 160px;
+
+overflow: hidden;
+}
+
+
+.side-block{
+
+/* position:relative; */
+
+width: 100%;
+
+float: left;
+
+/* top:-165px; */
+}
+
+
+/* ------------------------------------------------
+            --- Footer | Pied de Page
+---------------------------------------------------*/
+
+footer {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    float: left;
+    background-color: #3c140b;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+
+/* Ma div gmap */
+
+footer section:first-child {
+    width: calc(100% / 3);
+    float: left;
+}
+
+
+/* Ma newsletter */
+
+footer section:nth-child(2) {
+    width: calc( (100% / 3) - 1rem);
+    margin-left: 1rem;
+    float: left;
+}
+
+footer section:nth-child(2) fieldset {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: .2rem solid #FFF;
+    color: #FFF;
+    height: 180px;
+}
+
+form input {
+    width: calc(100% - 2rem);
+    height: 2.5rem;
+    border: 0;
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    /* box-sizing: border-box; */
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border: 0;
+    background-color: #FFF;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* CoordonnÃ©es de contact */
+
+
+
+footer section:last-child {
+    width: calc(100% / 3);
+    float: left;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer section:last-child h3 {
+    text-align: center;
+    font-weight: normal;
+    color: #FFF;
+    font-size: 2.4rem;
+}
+
+footer address {
+    color: #FFF;
+    font-style: normal;
+    padding-left: 4rem;
+    font-size:1.5rem;
+}
+
+footer address strong {
+    font-size: 2rem;
+}
+
+footer address a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}

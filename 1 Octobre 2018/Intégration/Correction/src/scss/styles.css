@@ -1,0 +1,53 @@
+/* --------------------------------------------------*/
+/*                   HELPERS                          /* 
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/*                    BASE                           /* 
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/*                   LAYOUT                           /* 
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/*                   COMPONENTS                         /* 
+/* --------------------------------------------------*/
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 2rem;
+}
+
+body main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body main header {
+  /* nav */
+}
+
+body main header .nav-main .language {
+  width: 200px;
+  display: inline-block;
+}
+
+body main header .nav-main .language p {
+  text-transform: uppercase;
+}
+
+body main header .nav-main .Contact {
+  width: 60rem;
+  display: inline-block;
+  float: right;
+}
+
+body main header .nav-main .Contact ul li a {
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+
+<!-- La balise "html" contient l'ensemble de ma page. --> 
+
+<html>
+
+
+    <!-- la balise "head" contient l'entête de ma page -->
+
+    <head>
+
+        <!-- permet de préciser encodage de la page, pour les accents. -->
+        <meta charset="utf8">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- raccourci pour créer fichier. Clic ctrl+clic gauche puis créer fichier -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+
+    </head>
+
+   
+
+
+    <!-- Titre de ma page -->
+
+    <title>Atelier 01 - HTML et CSS</title>
+
+
+    <!-- Dans la balise "body", on met le contenu de la page -->
+    <body>
+
+          
+
+            
+
+        <main>
+
+           
+                <header>
+                        <a href="index.html">
+                             <img src="./images/logo.jpg" alt="Logo" width="100">
+                             
+                        </a>
+                    </header>
+
+            <!-- Emmet : nav>ul>li*3>a[href=#]{Lien $$} -->
+            
+
+             <!-- En-tête du site -->
+            
+                 <!-- alt: alternative -> si nav bug et pour les aveugles -->
+
+                 <nav>
+                        <ul>
+                            <li ><a class="current" href="index.html">Accueil</a></li>
+                            <li><a href="#">Présentation</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+            <!-- Contenu du site -->
+            <section>
+                <h1>Japan stars</h1>
+                <p id="eat">Discover Japan today</p>
+                
+                <aside>
+                    
+                    <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-031-1024x683.jpg" width="200">
+                    <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-034-1024x683.jpg" width="200" alt="">
+                    <!-- <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-0310-1024x683.jpg" width="200" alt=""> -->
+
+                    <p>
+
+                            You will be amazed by such a beauty;
+                        </p>
+                </aside>
+
+                
+
+
+                
+
+                <article id="article1">
+
+                        <h2>The best food ever</h2>
+
+                        <div id="article1-main">
+
+                                <img  src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-036-1024x683.jpg">
+
+                                <p>Those of us living in Singapore may be familiar with Hashida Sushi’s Singapore branch, which has been named among tda in Tokyo. Both are good. In fact, Kenjiro Hashida (“Hatchximity to the various seafood in Japan meant that Hatch was able to serve us dishes that he couldn’t do in Singapore.</p>
+                        </div>
+                       
+
+                        
+                </article>
+
+                <!-- <article id="articleSide">
+
+                        <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-036-1024x683.jpg">
+                        
+                    
+                </article> -->
+
+                <!-- <aside>
+                    
+                        <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-031-1024x683.jpg" width="200">
+                        <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-034-1024x683.jpg" width="200" alt="">
+                        <img src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-0310-1024x683.jpg" width="200" alt="">
+                    </aside> -->
+
+                <!-- <img id="background2" src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-031-1024x683.jpg" alt=""> -->
+                
+
+                <div id="side">
+
+                        <div id=side-img>
+
+                                <img class="side" src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-038-1024x682.jpg" >
+                                <img class="side" src="http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/2014-06-037-1024x683.jpg" >
+        
+                        </div>
+                        
+                </div>
+                
+                
+            <p id="text-side">Those of us living in Singapore may be familiar with Hashida Sushi’s Singapore branch, which has been named among the best restaurants here by a number of publications. However, we decided to pay in Singapore.</p>
+            <!-- <p>De profil, l’Audi A6 Berline possède une silhouette plus large et plus sportive grâce à des lignes horizontales qui dominent l’avant et l’arrière. Les optiques de phares redessinées signent un nouveau regard. De série, l’Audi A6 Berline est dotée de phares Xénon plus. En option sont disponibles les phares intégralement à LED ou Audi Matrix LED. A l’avant, la nouvelle calandre Singleframe, plus anguleuse et plus large, est assortie de baguettes horizontales chromées qui apportent une discrète touche d’élégance. Les jantes 20 pouces en aluminium coulé style 5 branches en étoiles, disponibles en option, renforcent la présence de l’Audi A6 Berline sur la route.</p>
+
+            <p>"dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptat"</p> -->
+            </section>
+
+           
+
+           
+
+                 <footer>
+                    <section>
+                            <iframe src="https://www.google.com/maps/embed?pb" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </section>
+
+                    <section id="form">
+                        <form name = "NomDuFormulaire" method="POST" action="FichierChargéDuTraitementDesDonnees"></form>
+
+                        <fieldset>
+                            <legend>Newsletter</legend>
+                            <input type="email" placeholder="saisissez votre email">
+                            <input type="text" placeholder="saisissez votre prénom">
+                            <input type="text" placeholder="saisissez votre nom">
+                            <input type="submit" value="M'inscrire">
+                        </fieldset>
+                    </section>
+
+                    <!-- Coordonnées de Contact -->
+                    <section id="contact">
+                        <h3>Contactez-nous</h3>
+                        <address>
+                            <strong>Audi</strong><br>
+                            <a href="#">06655045</a> <br>
+                            <a href="#">contact@isen.fr</a> <br>
+                            41 Boulevard VAUBAN <br>
+                            59000 Lille <br>
+                            FRANCE
+                        </address>
+                    </section>
+                 </footer>
+
+             </section>
+        </main>
+    </body>
+</html>

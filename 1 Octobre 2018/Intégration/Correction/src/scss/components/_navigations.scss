@@ -1,0 +1,41 @@
+// -- NAVIGATION DU HAUT
+// -- SASS INTERPOLATION : https//bit.ly/2QrJjMH
+.c-main-nav{
+    $self: &; // = .c-main-nav
+    /* var pour  &--current #{$self}__link{} */
+    &__list{
+        margin-left:17rem;
+    }
+    &__item{
+        display:inline-block;
+        margin:0 1rem;
+        &:nth-child(3) #{$self}__link{
+            color:$orange;
+        }
+        &--current #{$self}__link{
+            /*  &--current -> Convention BEM modifier
+            normalement, on ne peut pas mettre a. Ce n'est pas bon en BEM
+            la couleur doit s'appliquer sur le a, pas sur le li. Mais si on veut respecter convention BEM, on ne peut pas mettre balise a. 
+            #{$self} Demande à sass d'interpréter cette variable et de rajouter après. */
+            color:$blue;
+        }
+    }
+    &__link{
+        font-family: $ff-primary;
+        font-size:$text--size-default;
+        color:$gray--dark;
+        line-height:5rem;
+    }
+
+    .c-slider-nav{
+        text-align:center;
+        &__logo{
+            margin-top:2rem;
+        }
+        &__list{}
+        &__item{}
+        &__link{}
+        &__description{}
+
+    }
+}

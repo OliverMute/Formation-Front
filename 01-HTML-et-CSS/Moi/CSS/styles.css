@@ -1,0 +1,458 @@
+html{
+    font-size:62.5%;
+    /* 10px = 62% */
+}
+
+body{
+    background:url("../images/fond.jpg");
+    background-size:cover;
+    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background:url("http://blog.topdeck.travel/wp-content/uploads/2016/10/shutterstock_107468783.jpg");
+    background-size:cover;
+}
+
+
+h2{
+
+    font-size:3rem;
+}
+
+main{
+
+    width:960px;
+    display:block;
+
+    margin:40px auto;
+    /* margin:80px auto 80px auto; */
+
+    
+    border-radius:10px;
+    /* border-top-left-radius:10px; */
+
+    /*Overflow avec la valeur hidden, va cacher tous les éléments qui dépassent */
+    overflow:hidden;
+    box-shadow: 0px 0px 1.5rem #b3b3b3;
+
+    background:url("http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/Piedmonte-hills-and-hill-towns-2015-04-20-Piedmonte-hills-and-hill-towns-1-1024x453.jpg" );
+    background-size:cover;
+    
+    padding:0.5rem;
+}
+
+aside{
+
+    margin-left:40px;
+    display:block;
+    width:700px;
+    margin-top:20px;
+
+   
+   
+}
+
+aside p {
+
+   
+    font-size:1.7rem;
+}
+
+aside img{
+
+    margin-left:20px;
+    transition:0.4s ease-in;
+
+    
+}
+
+
+aside img:hover{
+
+    width:220px;
+    
+    
+}
+
+
+#article1-main{
+
+    
+    display:block;
+
+    
+    /* margin:80px auto 80px auto; */
+
+    
+   
+
+    
+
+    /* background:url("http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/Piedmonte-hills-and-hill-towns-2015-04-20-Piedmonte-hills-and-hill-towns-1-1024x453.jpg" );
+    background-size:cover; */
+    
+    padding:0.5rem;
+  
+  
+  
+  
+}
+
+
+#article1-main img{
+
+    width:500px;
+        
+}
+
+article{
+
+   
+}
+
+
+#article1{
+
+    color:white;
+   
+    display:block;
+    margin-left:20px;
+    height:400px;
+    margin-top:40px;
+   
+   
+
+}
+
+#article1 p{
+
+    margin-top:20px;
+    color: white;
+    font-size:1.6rem;
+    width:200px;
+    float:right;
+   
+
+}
+
+
+#article1 img{
+
+  margin-top:10px;
+  
+
+}
+
+#articleSide img{
+    width:200px;
+
+}
+#articleSide{
+
+    
+    width:40px;
+    display:block;
+    
+}
+
+
+
+
+.side{
+
+ 
+    display:inline-block;
+   
+    margin-top:10px;
+    width:200px;
+    margin-left:20px;
+    
+    
+    
+   
+}
+
+#side{
+
+
+    
+    position:absolute;
+    width:850px;
+    margin-top:30px;
+    display:block;
+    
+  
+}
+
+
+#side-img{
+
+    display:block
+}
+
+#text-side{
+    
+    color: white;
+    font-size:1.6rem;
+    width:300px;
+    float:right;
+    margin-top:40px;
+    right:200px;
+    display:block;
+  
+
+}
+
+
+
+main section {
+
+    z-index:3;
+    display:block;
+    position:relative;
+    background-color:rgb(165, 165, 165);
+    margin-top:250px;
+}
+
+header{
+    
+    background:url("http://gazeandgraze.com/wordpress/wp-content/uploads/2015/05/Piedmonte-hills-and-hill-towns-2015-04-20-Piedmonte-hills-and-hill-towns-1-1024x453.jpg");
+    width :60rem;
+    height:500px;
+    background-size:cover;
+    position:fixed;
+    z-index:1;
+    display:block;
+
+   
+    
+    
+}
+
+header img {
+
+    position:absolute;
+}
+
+
+nav {
+
+    display:block;
+    width:920px;
+    margin:0 auto;
+    background-color:rgb(212, 212, 212);
+  
+    height:50px;
+    padding-top:10px;
+    position:relative;
+    z-index:2;
+    
+   
+    
+}
+
+nav ul {
+
+    padding:0;
+    margin:0;
+}
+
+nav li{
+
+    list-style:none;
+    display:inline-block;
+    padding: 0 4rem;
+
+   
+    
+}
+
+nav a {
+    color:black;
+    font-size:20px;
+    text-decoration:none;
+    transition:0.3s ease-in;
+    text-transform:uppercase;
+    font-size:20px;
+}
+
+nav a:hover {
+    color:rgb(192, 192, 192);
+    
+}
+
+nav .current a {
+
+    font-color:red;
+
+}
+
+
+
+
+
+
+#eat{
+
+    display:block;
+    margin:0 auto;
+    width:120px;
+    margin-top:20px;
+    font-size:2rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+p{
+
+    color:black;
+}
+
+#main{
+
+   
+    position:relative;
+    margin-top:30px;
+    left:3px;
+    width:960px;
+   
+    
+}
+
+#main img{
+
+    
+    width:450px;
+    position:relative;
+    
+    
+}
+
+
+
+
+img #background2{
+
+    position:absolute;
+}
+
+
+
+
+
+
+
+.current:hover{
+
+    color:rgb(204, 195, 255);
+    transition:0.3s ease-in;
+}
+
+h1{
+
+    color:rgb(218, 159, 32);
+    display:block;
+    margin:0 auto;
+    
+    margin-bottom:40px;
+    text-transform:uppercase;
+    font-size:30px;
+    position:relative;
+    margin:0 auto;
+    width:250px;
+    margin-top:80px;
+}
+
+img{
+   
+}
+
+img:hover{
+    filter:none;
+}
+
+
+
+
+
+iframe{
+
+   
+    margin-bottom:40px;
+}
+
+
+
+footer{
+
+  width:960px;
+
+ 
+
+}
+
+#form{
+
+    height:200px;
+}
+
+#contact{
+
+    font-size:2rem;
+}
+
+fieldset input{
+
+    font-size:2rem;
+}
+
+
+
+
+
+
+/* Section */
+
+
+section {
+
+    /* Dimension positionnement */
+    width:100%;
+    height:auto;
+    float:left;
+    width:480px;
+    
+}
+
+section h1{}
+
+section aside {
+    width:calc(100%/2);
+    float:left;
+    width:480px;
+    float:left;
+}
+
+section aside img{
+    
+    max-width:100%;
+}
+
+section article 
+{
+
+    width:calc(100%/2);
+    padding-left:1rem;
+    box-sizing:border-box;
+    float:left;
+    font-size:1.4rem;
+}
+
+section article p{
+
+
+}
+
+section article p strong{
+
+    color:red;
+}
+

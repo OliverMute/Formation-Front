@@ -1,0 +1,39 @@
+.o-button{
+    font-family:$ff-primary;
+    font-size:$text--size-medium;
+    color:$white;
+    text-transform:upercase;
+    text-align:center;
+    padding:1rem 2rem;
+
+    @include linear-gradient($orange--light, $orange--dark);
+    &--small {
+        font-size: $text--size-small;
+        padding:.5rem 1rem;
+        border-top-left-radius:.5rem;
+        border-bottom-right-radius:.5rem;
+    }
+    &--with-arrows {
+        &:before{
+            position:absolute;
+            width:147px;
+            height:36px;
+            background:url(../img/fleche.png);
+            content:url(../img/fleche.png);
+            transition:0.1s ease-in-out;
+            /* si on met with-arrows dans la classe, on a les flèches */
+            
+        }
+        &:after{
+            transform:rotate(180deg);
+            content:url(../img/fleche.png);
+        }
+        
+
+    }
+    &:hover{
+        text-decoration:none;
+        text-decoration:inherit;
+        @include linear-gradient($orange--dark, $orange--dark);
+    }
+}

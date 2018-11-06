@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+<!-- La balise "html" contient l'ensemble de ma page. --> 
+
+<html>
+
+
+    <!-- la balise "head" contient l'entête de ma page -->
+
+    <head>
+
+        <!-- permet de préciser encodage de la page, pour les accents. -->
+        <meta charset="utf8">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+
+    <!-- Titre de ma page -->
+
+    <title>Atelier 01 - HTML et CSS</title>
+
+
+    <!-- Dans la balise "body", on met le contenu de la page -->
+    <body>
+
+        <main>
+
+            <!-- En-tête du site -->
+            <header>
+                <a href="index.html">
+                     <img src="./images/logo.jpg" alt="Logo" width="100">
+                </a>
+            </header>
+             <!-- alt: alternative -> si nav bug et pour les aveugles -->
+
+
+            <!-- Emmet : nav>ul>li*3>a[href=#]{Lien $$} -->
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Acceuil</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contenu du site -->
+            <section>
+                <h1>La nouvelle Audi</h1>
+                
+                <aside>
+                    <img src="https://cdn.static01.nicematin.com/media/npo/1440w/2018/01/photo-11.jpg" alt="Venez découvrir al nouvelle Audi" width="200">
+                </aside>
+                <article>
+                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    
+                    <p>"dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptat"</p>
+                </article>
+            </section>
+
+           
+
+           
+
+                 <footer>
+                    <section>
+                            <iframe src="https://www.google.com/maps/embed?pb" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </section>
+
+                    <section>
+                        <form name = "NomDuFormulaire" method="POST" action="FichierChargéDuTraitementDesDonnees"></form>
+
+                        <fieldset>
+                            <legend>Newsletter</legend>
+                            <input type="email" placeholder="saisissez votre email">
+                            <input type="text" placeholder="saisissez votre prénom">
+                            <input type="text" placeholder="saisissez votre nom">
+                            <input type="submit" value="M'inscrire">
+                        </fieldset>
+                    </section>
+
+                    <!-- Coordonnées de Contact -->
+                    <section>
+                        <h3>Contactez-nous</h3>
+                        <address>
+                            <strong>Audi</strong><br>
+                            <a href="#">06655045</a> <br>
+                            <a href="#">contact@isen.fr</a> <br>
+                            41 Boulevard VAUBAN <br>
+                            59000 Lille <br>
+                            FRANCE
+                        </address>
+                    </section>
+                 </footer>
+
+             </section>
+        </main>
+    </body>
+</html>

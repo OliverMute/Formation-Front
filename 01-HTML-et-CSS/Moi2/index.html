@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- La balise "html" contient l'ensemble de ma page. -->
+<html>
+<!-- La balise "head" contient l'entête de ma page. -->
+
+<head>
+    <!-- Permet de préciser l'encodage de la page, pour les accents. -->
+    <meta charset="utf-8">
+
+    <!-- Titre de ma page -->
+    <title>Atelier 01 - HTML et CSS</title>
+
+    <!-- Normalize.css | https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- J'importe ma feuille de styles CSS après normalize.css -->
+    <link rel="stylesheet" href="css/backup.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+
+</head>
+<!-- Dans la balise "body", le contenu de notre page. -->
+
+
+
+<body>
+    <main>
+
+
+        <!-- En-tête du site -->
+        <header style="
+    margin-bottom: 5rem;
+">
+            <a href="index.html">
+                
+                
+            </a>
+            <h1>Resto Food</h1>
+        </header>
+        
+
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Our menus</a></li>
+                <li><a href="#">Command</a></li>
+                <li><a href="#">Book online</a></li>
+            </ul>
+        </nav>
+
+        <!-- Emmet : nav>ul>li.current>a[href=#]{Lien $}+li*2>a[href=#]{Lien $} -->
+        <!-- Menu du site -->
+        
+
+        <!-- Contenu du site -->
+        <section style="
+    background: white;
+    width: 100%;
+    float: left;
+    /* height: 364px; */
+">
+          
+            <aside>
+                <img src="http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/condesa/chicken.jpg" alt="Apprenez un Métier à l'ISEN">
+            </aside>
+            <article>
+                <p style="
+    font-family: 'Roboto Condensed';
+">One of our favorite experiences was at Aria in San Francisco, a Korean tapas joint puts their own spin on Korean street food. Their Sweet and Spicy Fried Chicken was off the chain!   </p>
+                <p><strong>Healthy food</strong></p>
+                <p>There are lots of ice cream joints around the Bay that have unique takes on the classic dessert such as ice cream in a doughnut, ice cream with eggettes, </p>
+            </article>
+            <div class="side-images">
+                <img src="http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/osteriafrancescana/lemontart2.png" width="220px" height="165px">
+            </div>
+             <div class="side-images">
+                <img src="http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/mirazur/pigeon.jpg" width="220px" height="165px">
+            </div>
+            
+
+
+        </section>
+
+        <section style="
+    width: 100%;
+    float: left;
+    background-color: #ffffffc2;
+    margin-top: -.1rem;
+    border-bottom: 1rem solid #3c140b;
+">
+        <article>
+                <p>First to arrive was a corn cracker "sandwich" with a sunflower seed paste filling, shortly after followed by a sea urchin shell filled with dashi jelly, soft crab meat, covered with a light potato mousseline, and sprinkled with seaweed powder. mouthfeel without being too heavy.</p>
+                <p><strong>Deliver everywhere</strong></p>
+                
+            
+            <div class="side-block">
+                
+                <img src="http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/etxebarri/anchovis2.jpg" width="220px" height="170" style="
+    margin-right: .4rem;
+">
+          
+                    <img src="http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/ambroisie/lobster.jpg" width="220px" height="165px">
+            
+            </div>
+            
+            </article>
+            <aside>
+                <img src="http://elizabethonfood.com/files/Liesbeth%20Auerbach/image/interscaldes2017/sole.jpg">
+            </aside></section>
+
+        <!-- Pied de page -->
+        <footer>
+
+            <!-- Google Maps -->
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d614.6501996998304!2d3.048813763835655!3d50.63374314392794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578da129f7d%3A0xd134d73fb7f4c699!2sISEN+Lille!5e0!3m2!1sfr!2sfr!4v1537797986889" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </section>
+
+            <!-- Inscription à la Newsletter -->
+            <section>
+                <form name="NomDuFormulaire" method="POST" action="FichierChargerDuTraitementDesDonnees.php">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <input type="email" placeholder="Saisissez votre email.">
+                        <input type="text" placeholder="Saisissez votre prenom.">
+                        <input type="text" placeholder="Saisissez votre nom.">
+                        <input type="submit" value="M'inscrire !">
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Coordonnées de Contact -->
+            <section>
+                <h3>Contact us</h3>
+                <address>
+                    <strong>Resto Food</strong><br>
+                    <a href="tel:+33320304050">03 20 30 40 50</a><br>
+                    <a href="mailto:contact@isen.fr">contact(@)isen.fr</a><br>
+                    41 Boulevard VAUBAN <br>
+                    59000 Lille <br>
+                    FRANCE
+                </address>
+            </section>
+        </footer>
+    </main>
+
+
+</body>
